@@ -1,0 +1,82 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[a4paper]{geometry}
+
+\usepackage{polski}
+\usepackage{xltxtra}
+\usepackage{indentfirst}
+\usepackage{relsize}
+\usepackage{fancyvrb}
+\usepackage{hyperref}
+\hypersetup{
+    pdftitle={Sprawozdanie z ćwiczenia nr 2 z laboratorium Programowanie internetowe},%
+    pdfauthor={Tomasz Cudziło},%
+    colorlinks=true,        % false: boxed links; true: colored links
+    linkcolor=black,        % color of internal links
+    citecolor=green,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=cyan,          % color of external links
+    unicode=true,           % non-Latin characters in Acrobat’s bookmarks
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdfnewwindow=true       % links in new window
+}
+
+%% tweak fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont{Charis SIL}
+\setsansfont[Scale=MatchLowercase]{Helvetica Neue}
+\setmonofont[Scale=MatchLowercase]{Menlo}
+\linespread{1.25}
+
+%% define custom commands and environments
+\DefineVerbatimEnvironment%
+  {SmallVerbatim}%
+  {Verbatim}{fontsize=\relsize{-0.5},numbers=left,numbersep=-10pt,frame=lines,tabsize=4}
+
+\newcommand{\f}[1]{\texttt{#1}}
+\newcommand{\s}[1]{\textsf{#1}}
+
+\begin{document}
+
+%%fakesection{Tytuł}
+\title{
+  Sprawozdanie z~ćwiczenia nr~2\\z~laboratorium Programowanie internetowe
+}
+\author{
+  Tomasz Cudziło\\
+  \textsc{PW EE Informatyka}\\[10pt]
+}
+\date{\today}
+\maketitle
+
+
+
+\section{Opis projektu}
+
+Celem projektu było wykonanie menu składającego się z ikon reagujących na
+zdarzenia kursora myszy.
+
+\subsection{Kod źródłowy}
+\begin{description}
+  \item[Adres projektu:] \hfill \\
+  \url{http://volt.iem.pw.edu.pl/~cudzilot/pi/cw2/}
+  \item[Repozytorium projektu:] \hfill \\
+  \url{https://github.com/student-tomasz/pi-cwiczenie-2}
+  \item[Repozytorium sprawozdania:] \hfill \\
+  \url{https://github.com/student-tomasz/pi-sprawozdanie-2}
+\end{description}
+
+\subsection{Biblioteki}
+
+\subsection{Wykonanie}
+
+
+
+\section{Wnioski}
+
+
+
+\section{Uwagi}
+
+
+
+\end{document}
