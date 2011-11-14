@@ -147,9 +147,38 @@ Obsługiwane są trzy typy zdarzeń:
 
 \section{Wnioski}
 
+Wykorzystując ścisłe powiązanie \f{JavaScript} z \f{DOM} dokumentów, możliwa
+jest ścisła kontrola zawartości i wyglądu dokumentów \f{HTML}.
+
+Pewna obiektowość \f{JavaScript} pozwoliła mi zamknąć logikę animacji w
+pojedynczym zasięgu \emph{(scope)}, widocznym tylko dla jednego wywołania
+funkcji. Również wewnątrz funkcji, niezależne części logiki są podzielone na
+metody. Jednoczesne korzystanie ze skryptowości \f{JavaScript} i oferowanej
+przez niego obiektowości są całkiem wygodne.
+
+Pewien problem sprawiło mi pobieranie pozycji kursora względem granic elementu
+listy \f{\#fancy-toolbar}. W tym przypadku występowały różnice w obsługiwanym
+przez przeglądarki \f{API}. W \f{Google Chrome 16.0} i \f{Firefox 8.0} ta sama
+funkcja zwracała różne wartości. Ponieważ nie znalazłem dobrej dokumentacji
+\f{JavaScript}, metodą prób i błędów napisałem inny sposób znajdowana położenia
+kursora.
+
 
 
 \section{Uwagi}
+
+Animacja została przetestowana w \f{Google Chrome 16.0}, \f{Firefox 8.0} oraz
+\f{Opera 11.52}. Animacja nie działa pod żadną wersją \f{Internet Explorera}. 
+
+Kod \f{HTML} jest zgodny z \f{XHTML 4.01 Strict}. Podstawowe style CSS zawierają
+się w specyfikacji \f{CSS 2.1}. Część stylów zawartych w pliku
+\href{https://github.com/student-tomasz/pi-cwiczenie-2/tree/b3f54b187e99c161f7a6780524f504c9fd1b00dd/stylesheets/fancy-toolbar.css}{\f{stylesheets/fancy-toolbar.css}}
+to deklaracje zawarte w \f{CSS 3}. Ich usunięcie nie wpływa na funkcjonalność
+strony, ani na animację ikon oraz pozwala uzyskać pozytywną wynik walidacji.
+
+Strona korzysta z \f{jQuery} do wstawienia adresów pod ikonami walidacji oraz do
+wypisania źródeł wykorzystywanych plików. Kod animacji jest niezależny od
+zewnętrznych bibliotek.
 
 
 
