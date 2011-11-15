@@ -36,6 +36,9 @@
 \newcommand{\f}[1]{\texttt{#1}}
 \newcommand{\s}[1]{\textsf{#1}}
 
+\newcommand{\rev}{3b28a62c26319a36333406057e962ccbe1d4a198}
+\newcommand{\revhref}[1] {\href{https://github.com/student-tomasz/pi-cwiczenie-2/blob/\rev/#1}{\f{#1}}}
+
 \begin{document}
 
 %%fakesection{Tytuł}
@@ -66,7 +69,7 @@ zdarzenia kursora myszy.
   \url{https://github.com/student-tomasz/pi-sprawozdanie-2}
 \end{description}
 Rewizja w czasie pisania sprawozdania:
-\href{https://github.com/student-tomasz/pi-cwiczenie-2/tree/b3f54b187e99c161f7a6780524f504c9fd1b00dd}{\f{b3f54b1}}.
+\href{https://github.com/student-tomasz/pi-cwiczenie-2/tree/\rev}{\f{\rev}}.
 
 \subsection{Biblioteki}
 
@@ -75,12 +78,9 @@ normalizujące z \f{YUI}. Wyświetlanie źródeł na stronie potrzebuje bibliote
 \f{jQuery} i \f{google-prettify}. Identycznie jak w projekcie pierwszym.
 
 \subsection{Wykonanie}
-Strona oraz jej style tj.
-\href{https://github.com/student-tomasz/pi-cwiczenie-2/tree/b3f54b187e99c161f7a6780524f504c9fd1b00dd/index.html}{\f{index.html}}
-i
-\href{https://github.com/student-tomasz/pi-cwiczenie-2/tree/b3f54b187e99c161f7a6780524f504c9fd1b00dd/stylesheets/fancy-toolbar.css}{\f{stylesheets/fancy-toolbar.css}}
-nie wpływają na zachowanie ikon. Logika animacji jest zawarta w
-\href{https://github.com/student-tomasz/pi-cwiczenie-2/tree/b3f54b187e99c161f7a6780524f504c9fd1b00dd/javascripts/fancy-toolbar.js}{\f{javascripts/fancy-toolbar.js}}.
+Strona oraz jej style tj. \revhref{index.html} i
+\revhref{stylesheets/fancy-toolbar.css} nie wpływają na zachowanie ikon. Logika
+animacji jest zawarta w \revhref{javascripts/fancy-toolbar.js}.
 
 \subsubsection{Statyczne \f{HTML} i \f{CSS}}
 Menu jest zaimplementowane jako lista nieuporządkowana \f{ul\#fancy-toolbar}.
@@ -99,7 +99,7 @@ Sama lista ma stale aktualizowaną szerokość i jest wycentrowana w swoim przod
 \subsubsection{Animacja z \f{JavaScript}}
 
 Funkcja zajmująca się animacją ikon jest zawarta w pliku
-\href{https://github.com/student-tomasz/pi-cwiczenie-2/tree/b3f54b187e99c161f7a6780524f504c9fd1b00dd/javascripts/fancy-toolbar.js}{\f{javascripts/fancy-toolbar.js}}.
+\revhref{javascripts/fancy-toolbar.js}.
 
 Jako argument przyjmuje \f{id} elementu mającego pełnić rolę menu. Na podstawie
 \f{id} wyszukuje w dokumencie węzeł reprezentujący menu. Przechodzi przez jego
@@ -172,9 +172,9 @@ Animacja została przetestowana w \f{Google Chrome 16.0}, \f{Firefox 8.0} oraz
 
 Kod \f{HTML} jest zgodny z \f{XHTML 4.01 Strict}. Podstawowe style CSS zawierają
 się w specyfikacji \f{CSS 2.1}. Część stylów zawartych w pliku
-\href{https://github.com/student-tomasz/pi-cwiczenie-2/tree/b3f54b187e99c161f7a6780524f504c9fd1b00dd/stylesheets/fancy-toolbar.css}{\f{stylesheets/fancy-toolbar.css}}
-to deklaracje zawarte w \f{CSS 3}. Ich usunięcie nie wpływa na funkcjonalność
-strony, ani na animację ikon oraz pozwala uzyskać pozytywną wynik walidacji.
+\revhref{stylesheets/fancy-toolbar.css} to deklaracje zawarte w \f{CSS 3}. Ich
+usunięcie nie wpływa na funkcjonalność strony, ani na animację ikon oraz pozwala
+uzyskać pozytywną wynik walidacji.
 
 Strona korzysta z \f{jQuery} do wstawienia adresów pod ikonami walidacji oraz do
 wypisania źródeł wykorzystywanych plików. Wyświetlanie źródeł odbywa się przez
